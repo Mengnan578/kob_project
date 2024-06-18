@@ -2,8 +2,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 // 创建一个简单的slice
-const counterSlice = createSlice({
-  name: 'counter',
+const recordSlice = createSlice({
+  name: 'record',
   initialState: { count: 0 },
   reducers: {
     increment: (state) => {
@@ -15,6 +15,6 @@ const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement } = recordSlice.actions;
 
-export default counterSlice;
+export default recordSlice;

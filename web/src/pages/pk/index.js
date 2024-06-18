@@ -1,10 +1,11 @@
 import React from 'react'
 
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement } from './pkstore';
+import { increment, decrement } from '../../store/pkstore';
 
 export default function PkIndex() {
-  const count = useSelector((state) => state.counter.count);
+  const count = useSelector((state) => state.pk.count);
+  // 派发状态
   const dispatch = useDispatch();
 
   return (

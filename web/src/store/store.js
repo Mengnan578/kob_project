@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterSlice from "../pages/pk/pkstore"
+import pkSlice from "./pkstore"
+import recordSlice from './RecordStore';
 
 const store = configureStore({
   reducer: {
-    counter: counterSlice.reducer,
+    pk: pkSlice.reducer,
+    record: recordSlice.reducer,
   },
 });
 
