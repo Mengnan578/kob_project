@@ -6,7 +6,12 @@ const pkSlice = createSlice({
   name: 'counter',
   initialState: { count: 0 },
   reducers: {
-    increment: (state) => {
+    /**
+     * 
+     * @param {*} state 上一次仓库的状态（允许你直接修改）
+     * @param {*} payload 传入的值
+     */
+    increment: (state, payload) => {
       state.count += 1;
     },
     decrement: (state) => {
